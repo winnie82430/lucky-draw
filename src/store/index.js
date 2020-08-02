@@ -1,18 +1,13 @@
+import { listField, newLotteryField, resultField, setData } from '@/helper/index';
 import Vue from 'vue';
 import Vuex from 'vuex';
-import {
-  setData,
-  resultField,
-  newLotteryField,
-  listField
-} from '@/helper/index';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     config: {
-      name: '年会抽奖',
+      name: '年會抽獎',
       number: 70,
       firstPrize: 1
     },
@@ -26,7 +21,7 @@ export default new Vuex.Store({
   mutations: {
     setClearConfig(state) {
       state.config = {
-        name: '年会抽奖',
+        name: '年會抽獎',
         number: 70,
         firstPrize: 1
       };
@@ -45,7 +40,7 @@ export default new Vuex.Store({
     },
     setClearStore(state) {
       state.config = {
-        name: '年会抽奖',
+        name: '年會抽獎',
         number: 70,
         firstPrize: 1
       };
