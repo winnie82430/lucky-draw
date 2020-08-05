@@ -27,8 +27,11 @@
     </div>
     <transition name="bounce">
       <div id="resbox" v-show="showRes">
-        <p @click="showRes = false">{{ categoryName }}抽獎结果：</p>
+        <!-- <p @click="showRes = false"  >{{ categoryName }}抽獎结果</p> -->
         <div class="container">
+        <p @click="showRes = false">
+          <img src="./assets/lottery.jpg">
+        </p>
           <span
             v-for="item in resArr"
             :key="item"
@@ -46,7 +49,7 @@
               <span
                 v-if="!!list.find(d => d.key === item)"
                 :style="{
-                  fontSize: '40px'
+                  fontSize: '200px'
                 }"
               >
                 {{ list.find(d => d.key === item).name }}
@@ -442,9 +445,10 @@ export default {
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
   p {
-    color: red;
+    color: #ffc267;
     font-size: 50px;
     line-height: 120px;
+    letter-spacing: 2px;
   }
   .container {
     display: flex;
@@ -453,8 +457,8 @@ export default {
   }
   .itemres {
     background: #fff;
-    width: 160px;
-    height: 160px;
+    width: 800px;
+    height: 250px;
     border-radius: 4px;
     border: 1px solid #ccc;
     line-height: 160px;
@@ -465,7 +469,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    bottom: 10%;
     .cont {
       display: flex;
       justify-content: center;

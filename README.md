@@ -1,4 +1,4 @@
-## 年會抽獎
+## 婚禮抽獎
 
 [演示地址](https://vitozyf.github.io/lucky-draw/index.html#/?tdsourcetag=s_pctim_aiomsg)
 

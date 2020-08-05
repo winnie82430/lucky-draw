@@ -40,7 +40,7 @@ export default {
         if (result[item] && config[item] > 0) {
           message.push({
             key: index + 1,
-            title: `${label}抽獎结果:`,
+            title: `${label}抽獎公佈`,
             value: `${
               result[item].length > 0 ? result[item].join('、') : '暂未抽取'
             }`
@@ -77,8 +77,9 @@ export default {
     }
     &.actiname {
       .title {
-        color: red;
-        font-size: 20px;
+        color: #ffc267;
+        font-size: 30px;
+        letter-spacing: 2px;
       }
     }
   }

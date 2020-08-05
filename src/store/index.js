@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     config: {
-      name: '年會抽獎',
+      name: '婚禮抽獎',
       number: 70,
       firstPrize: 1
     },
@@ -21,7 +21,7 @@ export default new Vuex.Store({
   mutations: {
     setClearConfig(state) {
       state.config = {
-        name: '年會抽獎',
+        name: '婚禮抽獎',
         number: 70,
         firstPrize: 1
       };
@@ -40,7 +40,7 @@ export default new Vuex.Store({
     },
     setClearStore(state) {
       state.config = {
-        name: '年會抽獎',
+        name: '婚禮抽獎',
         number: 70,
         firstPrize: 1
       };
